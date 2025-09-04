@@ -1,5 +1,7 @@
 'use strict';
 
+alert("user: iz, pass:1111 - user:pp, login:222" )
+
 // Elements
 const labelWelcome = document.querySelector('.welcome');
 const labelBalance = document.querySelector('.balance__value');
@@ -28,7 +30,7 @@ const containerMovements = document.querySelector('.movements');
 
 // Data
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'Ilija Zikic',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -48,7 +50,7 @@ const account1 = {
 };
 
 const account2 = {
-  owner: 'Jessica Davis',
+  owner: 'Pera Peric',
   movements: [
     5000, 3400, -150, -790, -3210, -1000, 8500, -30, 100, 325, -100, 987,
   ],
@@ -315,3 +317,4 @@ btnSort.addEventListener('click', function () {
   displayMovements(currentAccount, !sort);
   sort = !sort;
 });
+
